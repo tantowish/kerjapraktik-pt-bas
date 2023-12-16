@@ -5,14 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+    </style>
 </head>
-<body>
+<body class="font-poppins">
+    <nav class="fixed top-5 z-10 w-full">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="hidden sm:block px-12 py-4 text-slate-800 bg-white rounded-full mx-auto w-fit shadow-md">
+            <ul class="flex flex-wrap space-x-12 uppercase text-slate-400 font-semibold">
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-slate-900">Galeri</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-slate-900">produk</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-slate-900">visi & Misi</a>
+                </li>
+                <li>
+                    <a href="" class="hover:text-slate-900">berita</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section>
-        <div class="h-screen">
-
+    <section class="h-screen">
+        <div class="h-full bg-cover bg-center relative z-0 w-full flex flex-wrap items-center justify-center" style="background-image: url('../assets/home/hero.jpg'); height: 100%; background-attachment: fixed;">
+            <h1 class="absolute text-white font-semibold text-2xl lg:text-4xl max-w-4xl leading-snug p-8">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation”.
+            </h1>
+            <div class="absolute top-3/4 mt-6">
+                <button type="button" class="py-4 px-8 text-slate-900  bg-[#FFB13B] hover:bg-[#FFA825]">
+                    EXPLORE MORE +
+                </button>
+            </div>
         </div>
     </section>
+
+
+    <!-- About Section -->
+    <section class="bg-[#F8F8F8]">
+        <div class="max-w-5xl px-8 lg:px-32 lg:py-32 mx-auto text-center">
+            <h4 class="text-slate-400 mb-2">01 - About Us</h4>
+            <h1 class="text-slate-900 text-5xl mb-8">Tentang Kami</h1>
+            <p class="text-slate-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <hr class="max-w-xs mx-auto p-1 bg-[#FFB13C]">
+        
+    </section class="bg-[#F8F8F8]">
+        <div class="max-w-6xl px-8 lg:px-32 lg:py-32">
+
+        </div>
+    <section>
+
+    </section>
+
+    <script>
+        AOS.init({
+        // ... your other initialisation options here ...
+        once: true,
+        });
+    </script>
+    
+    
 </body>
 </html>
