@@ -1,0 +1,38 @@
+/* Add this style to your existing CSS */
+@keyframes slideIn {
+    from {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+}
+
+/* Add this class to apply the animation */
+.menu-slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.menu-slide-out {
+    animation: slideOut 0.5s ease-in-out;
+}
+
+.active{
+    color: rgb(15 23 42);
+  }
+.active-responsive{
+    color:rgb(15 23 42);
+  }
